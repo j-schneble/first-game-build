@@ -9,8 +9,8 @@ function animate(){
    
     handleRipples();
     ctx2.drawImage(backdroplvl2, 0, 0, canvas.width, canvas.height); 
-    handleParticles();
     
+    handleParticles();
     frogger.draw();
     frogger.update();
     
@@ -18,15 +18,6 @@ function animate(){
     // handleScoreBoard();
     ctx4.drawImage(grass, 0, 0, canvas.width, canvas.height);
     requestAnimationFrame(animate);
-    
-    
-    
-    ctx3.clearRect(0, 0, canvas.width, canvas.height);
-    frogger.draw();
-    frogger.update();
-    handleObstacles();
-    requestAnimationFrame(animate);
-
 }
 
 animate();
@@ -58,4 +49,8 @@ function handleScoreBoard(){
     ctx4.strokeStyle = 'black';
     ctx4.font = '15px Verdana';
     ctx4.strokeText('Score', 265, 150);
+    ctx4.font = '60px Verdana';
+    ctx4.fillText(scrore, 270, 60);
+    ctx4.font = '15px Verdana';
+    ctx4.strokeText('Collisions: ')
 }

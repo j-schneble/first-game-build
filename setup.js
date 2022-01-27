@@ -45,8 +45,4 @@ const grass = new Image();
 grass.src = '/images/grass.png';
 
 
-const particlesArray = [];
-const maxParticles = 300;
-const ripplesArray = [];
-const carsArray = [];
-const logsArray = [];
+

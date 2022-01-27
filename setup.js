@@ -39,10 +39,12 @@ const logsArray = [];
 
 // images
 const backdroplvl2 = new Image();
-backdroplvl2.src='/images/backdroplvl2.png';
+backdroplvl2.src='images/backdroplvl2.png';
+backdroplvl2.onload = () => {}
 
 const grass = new Image();
-grass.src = '/images/grass.png';
+grass.src = 'images/grass.png';
+grass.onload = () => {}
 
 
 
